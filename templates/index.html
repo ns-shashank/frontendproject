@@ -17,14 +17,17 @@
   </head>
  <body>
    <div class="container" >
-   <h1 class="text-center mt-2 mb-4" >Shashank Careers</h1>
+   <h1 class="text-center mt-2 mb-4" >{{Company_name}} Careers</h1>
    <img class="img-fluid" id ="banner"src="https://a90fdfc7-0aeb-488f-9f55-f214eb0a292b-00-g57u54opf3ro.pike.replit.dev/static/anime1.jpeg">
      <h1 class="text-center mt-2 mb-4">About Shashank</h1>
     <p >
       Python has become one of the most sought-after programming languages in the job market, thanks to its versatility, ease of learning, and broad range of applications. As businesses increasingly rely on data-driven decision-making and automation, the demand for Python developers continues to soar. Professionals skilled in Python can find opportunities across various industries, including web development, data science, artificial intelligence, machine learning, and scientific computing. Employers are particularly looking for candidates who can harness Python’s extensive libraries and frameworks, such as Django, Flask, Pandas, and TensorFlow, to build efficient and scalable solutions. With its growing popularity and the expanding tech landscape, pursuing a career in Python programming offers promising prospects for both new graduates and seasoned professionals looking to upskill.
     </p>
    <h2 class="text-center mt-2 mb-4">Open Position</h2>
-   <p >TODO -Show the jobs here</p>
+     <div> {% for job in jobs %} 
+        {% include 'jobitem.html' %}
+         {% endfor %}
+     </div>
      <div >
      <button class="btn btn-primary btn-lg">Contact no</button>
        <p class="mt-4">Copyright 2022, Shashank</p>
