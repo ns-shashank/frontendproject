@@ -27,13 +27,13 @@ JOBS = [{
 
 @app.route('/')
 def shashank():
-  return render_template("index.html", jobs=JOBS, Company_name="Shashank")
+    return render_template("index.html", jobs=JOBS, Company_name="Shashank")
 
 
-@app.route('/api/jobs')
+@app.route('/jobs')
 def list_jobs():
-  return jsonify(JOBS)
+    return jsonify(JOBS)
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', debug=True)
